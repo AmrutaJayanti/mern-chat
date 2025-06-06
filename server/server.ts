@@ -48,9 +48,7 @@ app.use(express.json());
 app.use(
 	cors({
 		origin: [
-			'http://localhost:3000',
-			'http://localhost:3001',
-			'https://mern-t-chat.vercel.app',
+			'https://livenetworkgames.netlify.app'
 		],
 	}),
 );
@@ -73,9 +71,7 @@ const io: Server = new Server(server, {
 	pingTimeout: 60000,
 	cors: {
 		origin: [
-			'http://localhost:3000',
-			'http://localhost:3001',
-			'https://mern-t-chat.vercel.app',
+			'https://livenetworkgames.netlify.app'
 		],
 	},
 });
