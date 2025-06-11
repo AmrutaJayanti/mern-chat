@@ -49,7 +49,7 @@ app.use(
 	cors({
 		origin: [
 			'https://livenetworkgames.netlify.app',
-			'http://localhost:5173/'
+			'http://localhost:5173'
 		],
 	}),
 );
@@ -73,7 +73,7 @@ const io: Server = new Server(server, {
 	cors: {
 		origin: [
 			'https://livenetworkgames.netlify.app',
-			'http://localhost:5173/'
+			'http://localhost:5173'
 		],
 	},
 });
